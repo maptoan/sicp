@@ -20,8 +20,9 @@ export const IndexHeaderCard: FC<HeaderCardProps> = ({
         class="index-show collapsed"
         data-toggle="collapse"
         href="#index-collapse-${index + 1}"
-        aria-expanded="true"
+        aria-expanded="false"
         aria-controls="index-collapse-${index + 1}"
+        aria-label="Toggle chapter content"
       >
         &#10148;
         <!-- ➤ (because this one is rendered blue on mobile: ▶  -->
@@ -30,8 +31,9 @@ export const IndexHeaderCard: FC<HeaderCardProps> = ({
         class="index-hide collapsed"
         data-toggle="collapse"
         href="#index-collapse-${index + 1}"
-        aria-expanded="true"
+        aria-expanded="false"
         aria-controls="index-collapse-${index + 1}"
+        aria-label="Toggle chapter content"
       >
         &#x25BC;
         <!-- ▼ (because the corresponding one is not rendered) -->
@@ -55,8 +57,9 @@ export const SidebarHeaderCard: FC<HeaderCardProps> = ({
         class="sidebar-show collapsed"
         data-toggle="collapse"
         href="#sidebar-collapse-${index + 1}"
-        aria-expanded="true"
+        aria-expanded="false"
         aria-controls="sidebar-collapse-${index + 1}"
+        aria-label="Toggle chapter content"
       >
         &#10148;
         <!-- ➤ (because this one is rendered blue on mobile: ▶  -->
@@ -65,8 +68,9 @@ export const SidebarHeaderCard: FC<HeaderCardProps> = ({
         class="sidebar-hide collapsed"
         data-toggle="collapse"
         href="#sidebar-collapse-${index + 1}"
-        aria-expanded="true"
+        aria-expanded="false"
         aria-controls="sidebar-collapse-${index + 1}"
+        aria-label="Toggle chapter content"
       >
         &#x25BC;
         <!-- ▼ (because the corresponding one is not rendered) -->
